@@ -1,0 +1,199 @@
+html {
+    background-color: #C4F09F;
+    font-family: "Signika Negative", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+body {
+    margin: 0px;
+}
+
+#centre {
+    margin-top: 0px;
+    padding-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    min-width: calc(min(100%, 1000px));
+    max-width: 2000px;
+    padding: 0px;
+    background-color: #FFFFFF;
+}
+
+#header {
+    background-color: #1F271B;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;
+}
+
+#header {
+    background-image: url("../images/garden.jpg");
+    background-size: cover;
+    object-position: 50% 50%;
+    padding-top: 20vh;
+}
+
+#header-text {
+    border-top: solid darkgreen 6px;
+    backdrop-filter: blur(8px) brightness(60%);
+    -webkit-backdrop-filter: blur(8px) brightness(60%);
+}
+
+#header h1, h2 {
+    margin: 0px 0px 0px;
+}
+
+#header h1 {
+    padding-top: 1em;
+    padding-bottom: 0.25em;
+}
+
+#header h2 {
+    padding-bottom: 1em;
+}
+
+#content {
+    padding: 1em;
+}
+
+#content h1 {
+    background-color: #C4F09F;
+    width: 100%;
+    margin-left: 0px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+#markdown-toc {
+    text-align: left;
+}
+
+#group-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+.core-group-member {
+    width: 450px;
+}
+
+.group-left {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-color: #C4F09F;
+}
+
+.group-right {
+    width: 70%;
+    height: 100%;
+    float: right;
+    margin-left:0px;
+    padding-left: 0px;
+}
+
+.group-right p, h1 {
+    margin-top: 0.2em;
+}
+
+.pronouns {
+    font-size: 0.7rem;
+    font-style:italic;
+}
+
+.core-group-photo {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+#footer {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    font-size: 0.5rem;
+}
+
+#how-it-works-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    column-gap: 0.1rem;
+    row-gap: 1rem;
+}
+
+.how-it-works-role {
+    width: 15%;
+    min-width: 210px;
+    margin: 0px;
+    font-size: 0.5rem;
+    flex-grow: 1;
+    border: solid darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+}
+
+.how-it-works-role p {
+    margin: auto 0.5em;
+}
+
+.logo-image {
+    max-width: 56px;
+    padding: 0.5em;
+}
+
+
+blockquote {
+    text-align: right;
+    background-color: #C4F09F;
+    padding: 1em;
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: serif;
+}
+
+@media only screen and (orientation: portrait), (max-width:400px) {
+    blockquote {
+        margin: 0px;
+    }
+
+    #content {
+        padding: 0px;
+    }
+}
+
+#survey-link {
+    background-color: #C4F09F;
+    width: 80%;
+    margin: auto;
+    padding: 0.5em 1em;
+    border-style: solid;
+    border-color: #1F271B;
+    /* Ensure survey link don't bust out of the container on narrow devices
+       https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+input {
+    font-size: 1rem;
+    margin: 0.5rem;
+    width: 90%;
+}
